@@ -2,7 +2,32 @@
 
 How I use Claude Code (in the cloud), GitHub, and a local Obsidian vault together. Claude Code does the work and GitHub holds the results. Obsidian is where I read them.
 
-## Diagram
+## Overview
+
+What lives where, and how information moves between the pieces.
+
+```mermaid
+flowchart LR
+    ME(["Me"])
+    CC["Claude Code<br/>(cloud)"]
+    GH[("GitHub repo")]
+
+    subgraph OBS["Obsidian vault"]
+        LOCAL["Local repo<br/>(clone of the GitHub repo)"]
+    end
+
+    ME -->|"prompts"| CC
+    CC ==>|"pushes"| GH
+    GH ==>|"fetch / pull"| LOCAL
+    LOCAL -.->|"read in Obsidian"| ME
+```
+
+- **Claude Code** receives my prompts and pushes its work to the GitHub repo.
+- **GitHub repo** receives from Claude Code. (My occasional local edits and PR merges are covered in the detailed diagram below.)
+- **Local repo** receives from GitHub and lives inside the Obsidian vault.
+- **Me:** I prompt Claude Code and read the results in Obsidian.
+
+## Detailed diagram
 
 ```mermaid
 flowchart TB

@@ -53,7 +53,7 @@ npm install
 npm run build        # type-checks, then bundles to main.js
 ```
 
-Copy `main.js`, `manifest.json` and `styles.css` into `<vault>/.obsidian/plugins/git-repos-overview/`, then enable the plugin under Settings → Community plugins.
+The built `main.js` is committed so a vault can use the plugin straight from a `git pull`. See README.md for install steps. Rebuild and commit `main.js` with any source change.
 
 ## Later
 

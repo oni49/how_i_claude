@@ -1,0 +1,17 @@
+{
+  "name": "git-repos-overview",
+  "version": "0.1.0",
+  "description": "Obsidian plugin: sidebar summary of git repos in the vault",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "dev": "node esbuild.config.mjs",
+    "build": "tsc --noEmit --skipLibCheck && node esbuild.config.mjs production"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "esbuild": "^0.25.0",
+    "obsidian": "latest",
+    "typescript": "^5.6.0"
+  }
+}

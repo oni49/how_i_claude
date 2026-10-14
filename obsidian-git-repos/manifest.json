@@ -1,0 +1,9 @@
+{
+  "id": "git-repos-overview",
+  "name": "Git Repos Overview",
+  "version": "0.1.0",
+  "minAppVersion": "1.4.0",
+  "description": "Sidebar summary of the git repos inside your vault: their branches and which one is checked out.",
+  "author": "oni49",
+  "isDesktopOnly": true
+}

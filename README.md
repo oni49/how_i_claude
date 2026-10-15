@@ -24,3 +24,4 @@ Claude Code does the work and pushes it to GitHub. I read the results in a local
 ## Contents
 
 - [Obsidian + Claude Code + GitHub workflow](workflows/obsidian-claude-github-workflow.md): how cloud Claude Code, GitHub and a local Obsidian vault fit together, with a diagram of the layers and trust boundaries
+- [Git Repos Overview](obsidian-git-repos/README.md): an Obsidian plugin that lists the git repos in a vault with their branches and the checked-out branch

@@ -1,0 +1,60 @@
+.git-repos-view {
+  padding: var(--size-4-2);
+}
+
+.git-repos-status {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  margin-bottom: var(--size-4-2);
+}
+
+.git-repos-empty {
+  color: var(--text-muted);
+}
+
+.git-repos-repo {
+  margin-bottom: var(--size-2-2);
+}
+
+.git-repos-repo > summary {
+  cursor: pointer;
+  display: flex;
+  align-items: baseline;
+  gap: var(--size-4-2);
+  padding: var(--size-2-1) 0;
+}
+
+.git-repos-name {
+  font-weight: var(--font-semibold);
+  word-break: break-all;
+}
+
+.git-repos-current {
+  color: var(--text-accent);
+  font-size: var(--font-ui-smaller);
+  white-space: nowrap;
+}
+
+.git-repos-branches {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 var(--size-4-4);
+}
+
+.git-repos-branch {
+  font-family: var(--font-monospace);
+  font-size: var(--font-ui-smaller);
+  color: var(--text-muted);
+  padding: var(--size-2-1) 0;
+}
+
+.git-repos-branch.is-current {
+  color: var(--text-accent);
+  font-weight: var(--font-semibold);
+}
+
+.git-repos-error {
+  color: var(--text-error);
+  font-size: var(--font-ui-smaller);
+  padding-left: var(--size-4-4);
+}
